@@ -54,23 +54,6 @@ code {
 	right: 0;
 }
 
-#logo_git{
-	margin-right:20px;
-}
-
-.textGui2{
-	margin-left:3%;
-	margin-right:3%;
-}
-.textGui1{
-	margin-left:2%;
-	margin-right:2%;
-}
-.Gui-images{
-	margin-left:auto;
-	margin-right:auto;
-}
-
 .logo {
 	width:40px; 
 	margin-right:20px; 
@@ -197,4 +180,17 @@ h3 {
 	width: 1000px;
 	display: block;
 	height: auto;
+}
+
+.textGui2{
+	margin-left:3%;
+	margin-right:3%;
+}
+.textGui1{
+	margin-left:2%;
+	margin-right:2%;
+}
+.Gui-images{
+	margin-left:auto;
+	margin-right:auto;
 }
