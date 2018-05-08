@@ -1,9 +1,183 @@
-.logo{
-	width:40px;
-	float: right;
-	margin-right:30px;
+/*--Couleurs--*/
+:root {
+	--background: #141422;
+	--link: rgb(247, 239, 207);
+	--white: #fff;
+	--border: #262633;
+	--accent: #ef4444;
+	--title: #20968b;
+  }
+
+body {
+	color: var(--white);
 }
 
-#logo_git{
-	margin-right:20px;
+code {
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    color: #e75225;
+    background-color: #262633;
+    border: 1px solid #393945;
+    padding: 0.1em 0.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    border-radius: 3px;
+    vertical-align: bottom;
+}
+
+/*---Style Navigation Bar--*/
+.bg-light {
+    background-color: var(--background)!important;
+}
+
+.navbar {
+	padding: 1.5em .5em;
+}
+
+.navbar a {	
+	color:  var(--link);
+	font-weight: 600;
+	text-shadow: 0 2px 4px rgba(255,255, 255,.7);
+}
+
+.nav {
+	position: absolute;
+	left: 0px;
+	padding-left: 10px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--background);
+    background-color: var(--link);
+}
+
+.logo-container {
+	right: 0;
+}
+
+.logo {
+	width:40px; 
+	margin-right:20px; 
+}
+
+#logoGit {
+	margin-left: 30px;
+}
+
+.tab-content {
+	background-color: var(--background);;
+	position: fixed;
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+
+/*---Style Accueil--*/
+
+.container-title {
+	padding: 100px 0;
+	width: 400px;
+	margin: auto;
+}
+
+.brand {
+    margin: 0 auto;
+    width: 80%;
+	color: var(--white);;
+	padding: 1.7rem 0;
+}
+
+.brand .text {
+	color: var(--link);
+}
+
+.brand .title {
+	font-size: 45px;
+	font-weight: 700;
+}
+
+.brand .desc {
+	font-size: 14px;
+	color: var(--white);;
+}
+
+.brand img {
+	vertical-align: middle;
+	width: 128px;
+	float: left;
+	margin-right: 5px;
+}
+
+.download {
+	width: 250px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.download button {
+	margin-bottom: 5%;
+	padding: 18px 32px;
+	background-color: var(--accent);
+}
+
+.download a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+
+#footer {
+	text-align: left;
+    position: fixed; 
+    bottom:0%;
+	padding: 10px 20px;
+	left: 0;
+	right: 0;
+	background: transparent;
+	opacity: 0.2;
+	border-top: 0;
+	color: var(--link);
+	font-size: 12px;
+}
+
+#footer:hover {
+	font-size: 14px;
+	opacity: 0.9;
+	background: transparent;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.8s;
+}
+
+/*---Style Interfaces Graphiques--*/
+
+.container:last-child {
+	margin-bottom: 200px;
+}
+
+.container section {
+    padding: 5em 0;
+	border-bottom: 3px solid var(--border);;
+}
+
+h3 {
+	font-size: 22px;
+	color: var(--title);;
+	margin-bottom: 50px;
+	font-weight: 700;
+	line-height: 27.2px;
+}
+
+.center {
+	text-align: center;
+}
+
+.center img{
+	height: auto;
+	margin: 0 50px;
+}
+
+.interface img {
+	width: 1000px;
+	display: block;
+	height: auto;
 }
