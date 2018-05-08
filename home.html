@@ -1,13 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-   <title>Git Project</title>
+    <link rel="stylesheet" href="styles/home.css">
+   <title>Git Presentation</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#homeContainer">Git gud</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -17,32 +16,48 @@
             <a class="nav-link active" href="#homeContainer" data-toggle="tab" role="tab" aria-controls="home">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#oneFeatureContainer" data-toggle="tab" role="tab" aria-controls="one-feature">Présentation de Git</a>
+            <a class="nav-link" href="#oneFeatureContainer" data-toggle="tab" role="tab" aria-controls="one-feature">Git</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#twoFeatureContainer" data-toggle="tab" role="tab" aria-controls="two-feature">GitHub</a>
+            <a class="nav-link" href="#twoFeatureContainer" data-toggle="tab" role="tab" aria-controls="two-feature">GitHub & GitLab</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#thirdFeatureContainer" data-toggle="tab" role="tab" aria-controls="third-feature">Premières commandes</a>
+            <a class="nav-link" href="#thirdFeatureContainer" data-toggle="tab" role="tab" aria-controls="third-feature">Commandes de base</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#fourthFeatureContainer" data-toggle="tab" role="tab" aria-controls="fourth-feature">Branching & merging</a>
+            <a class="nav-link" href="#fourthFeatureContainer" data-toggle="tab" role="tab" aria-controls="fourth-feature">Branches</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#fifthFeatureContainer" data-toggle="tab" role="tab" aria-controls="fifth-feature">Maîtriser le temps</a>
+            <a class="nav-link" href="#fifthFeatureContainer" data-toggle="tab" role="tab" aria-controls="fifth-feature">Réparation</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#fifthFeatureContainer" data-toggle="tab" role="tab" aria-controls="sixth-feature">Interfaces graphiques</a>
+            <a class="nav-link" href="#sixthFeatureContainer" data-toggle="tab" role="tab" aria-controls="sixth-feature">Interfaces graphiques</a>
           </li>
         </ul>
       </div>
-        <a href="https://git-scm.com" title="site officiel de Git" target="_blank"><img src="images/git.png" class="logo" id="logo_git" alt="Logo git"/></a>
-        <a href="http://github.com" title="site de github" target="_blank"><img src="images/github.png" class="logo" alt="Logo github"/></a>
+        <span class="logo-container">
+          <a href="https://git-scm.com" title="Site officiel de Git" target="_blank"><img src="images/git.png" class="logo" id="logoGit" alt="Logo git"/></a>
+          <a href="http://github.com" title="site de GitHub" target="_blank"><img src="images/github.png" class="logo"  alt="Logo github"/></a>
+        </span>
   </nav>
   
   <div class="tab-content">
     <div id="homeContainer" class="tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
-      Home
+      <div class="container-title">
+        <div class="brand">
+          <div class="text">
+          <img src="images/cat.png" />
+            <div class="title">GitGud</div>
+            <div class="desc">Présentation de Git</div>
+          </div>
+        </div>
+      </div>
+        <div class="download">
+          <button type="button" class="btn"><a href="https://git-scm.com/" target="_blank">Download Git</a></button>                    
+          <button type="button" class="btn"><a href="https://github.com/" target="_blank">GitHub</a></button>   
+          <button type="button" class="btn"><a href="https://www.gitkraken.com/" target="_blank">Download GitKraken</a></button>    
+        </div>
+      <div id="footer">Site et présentation par Guillaume Côté, David Gaulin, William Gonin, Jessy Nadeau & Cynthia Vilanova</div>
     </div>
     <div id="oneFeatureContainer" class="tab-pane fade" role="tabpanel" aria-labelledby="one-feature-tab">
       <div class="textGui1"><br>
@@ -97,7 +112,42 @@
       Fifth feature feature
     </div>
     <div id="sixthFeatureContainer" class="tab-pane fade" role="tabpanel" aria-labelledby="sixth-feature-tab">
-      Fifth feature feature
+      <div class="container">
+        <section class="container">
+          <div class="center interface">
+            <h3>L'interface</h3>
+            <img src="images/interface-slim.png" />
+          </div>
+          </section>
+          <section class="container">                
+            <div class="row">
+              <div class="col-sm">
+                  <h3 class="teal center">Open</h3>
+                  <p>
+                    Permet d'ouvrir un projet déjà sur sa machine<br>
+                      <code>File > Open</code> > Choisir le dépôt à ouvrir
+                  </p>
+              </div>
+              <div class="col-sm">
+                  <h3 class="teal center">Clone</h3>
+                  <p>
+                    Permet de créer une copie d'un projet local ou d'un projet hébergé sur un site comme GitHub<br>
+                    <code>File > Clone</code> > Entrer l’URL du projet ou le chemin<br>
+                    Nécessite l’accès au dépôt si le projet est privé                      
+                  </p>
+              </div>
+              <div class="col-sm">
+                  <h3 class="teal center">Init</h3>
+                  <p>
+                      Permet de créer un nouveau projet<br>
+                      <code>File > Init</code><br>
+                      En <b>local</b> > Choisir le dossier qui contiendra le projet<br>
+                      Sur <b>GitHub</b> > Choisir son compte GitHub, donner un nom > Créer et cloner<br>
+                  </p>
+              </div>
+            </div>                                      
+          </section>
+        </div>
     </div>
   </div>
 
