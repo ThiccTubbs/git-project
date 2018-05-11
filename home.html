@@ -77,22 +77,51 @@
     <div id="sixthFeatureContainer" class="tab-pane fade" role="tabpanel" aria-labelledby="sixth-feature-tab">
       <div class="container">
         <section class="container">
-          <div class="center interface">
-            <h3>L'interface</h3>
+          <div class="interface">
+            <h2 class="center">L'interface</h2>
             <img src="images/interface-slim.png" />
+            <div class="row">
+              <div class="col-sm">
+                  <h3 class="teal center">Panneau de gauche</h3>
+                  <p>
+                    <b><u>Local</u>:</b> Références à des branches locales permettant de séparer le travail<br>
+                    <b><u>Remote</u>:</b> Références à des branches du projet hébergé sur GitHub (ou autre)<br>
+                    <b><u>Pull requests</u>:</b> Montre les demandes actives pour fusionner des branches<br>
+                    <b><u>Tags</u>:</b> Pointeurs vers des commits<br>
+                    <b><u>Stash</u>:</b> Permet de voir les fichiers modifiés mis de côté
+                  </p>
+              </div>
+              <div class="col-sm">
+                  <h3 class="teal center">Menu supérieur</h3>
+                  <p>
+                    <b><u>Undo & Redo</u>:</b> Permet d'annuler ou de refaire une action dans l'interface. Attention, ce n'est pas un revert commit!<br>
+                    <b><u>Pull</u>:</b> Récupère et fusionne automatiquement une branche distante dans votre branche locale<br>
+                    <b><u>Push</u>:</b> Envoie vos modifications (commits) sur la branche distante<br>
+                    <b><u>Branch</u>:</b> Crée une copie d'une branche et permet de travailler à côté de celle-ci<br>
+                    <b><u>Stash</u>:</b> Permet de mettre de côté des changements (<code>//WIP</code>) en créant des copies des fichiers sur la machine locale<br>
+                    <b><u>Pop stash</u>:</b> Permet de rouvrir des modifications (<code>//WIP</code>) mises de côté               
+                  </p>
+              </div>
+              <div class="col-sm">
+                  <h3 class="teal center">Panneau commits</h3>
+                  <p>
+                     Situé à droite de la fenêtre, il contient les fichiers et les changements apportés à une branche.
+                  </p>
+              </div>
+            </div>   
           </div>
           </section>
           <section class="container">                
             <div class="row">
               <div class="col-sm">
-                  <h3 class="teal center">Open</h3>
+                  <h2 class="teal center">Open</h2>
                   <p>
                     Permet d'ouvrir un projet déjà sur sa machine<br>
                       <code>File > Open</code> > Choisir le dépôt à ouvrir
                   </p>
               </div>
               <div class="col-sm">
-                  <h3 class="teal center">Clone</h3>
+                  <h2 class="teal center">Clone</h2>
                   <p>
                     Permet de créer une copie d'un projet local ou d'un projet hébergé sur un site comme GitHub<br>
                     <code>File > Clone</code> > Entrer l’URL du projet ou le chemin<br>
@@ -100,7 +129,7 @@
                   </p>
               </div>
               <div class="col-sm">
-                  <h3 class="teal center">Init</h3>
+                  <h2 class="teal center">Init</h2>
                   <p>
                       Permet de créer un nouveau projet<br>
                       <code>File > Init</code><br>
