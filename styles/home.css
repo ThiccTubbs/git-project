@@ -24,6 +24,7 @@ code {
     vertical-align: bottom;
 }
 
+
 /*---Style Navigation Bar--*/
 .bg-light {
     background-color: var(--background)!important;
@@ -158,11 +159,12 @@ code {
 
 .container:last-child {
 	margin-bottom: 200px;
+	border-bottom: none;
 }
 
 .container section {
     padding: 5em 0;
-	border-bottom: 3px solid var(--border);;
+	border-bottom: 3px solid var(--border);
 }
 
 h2 {

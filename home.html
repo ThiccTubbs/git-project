@@ -72,8 +72,43 @@
       Fourth feature feature
     </div>
       <div id="fifthFeatureContainer" class="tab-pane fade" role="tabpanel" aria-labelledby="fifth-feature-tab">
-      Fifth feature feature
-    </div>
+        <div class="container">
+          <section class="container"> 
+            <h2 class="center">Revenir dans le passé avec Git</h2>
+            Il y a plusieurs façons de revenir dans un état antérieur avec git.
+            Cependant, certaines sont plus dangereuses que d'autres, ou plus
+            permanentes. En effet, certaines méthodes ne font que désengager un
+            commit, tandis que d'autres l'effacent complétement de tout historique. On
+            perd donc la trace de son existence.<br><br>
+            <code>Git log --oneline</code>: Permet de consulter l'historique des commit et les codes.<br><br>
+            <h3>Git checkout</h3>
+            <code>Git checkout �ID�</code>: Spectateur pour voir comment le commit était dans le
+            temps, impossible de modifier, git checkout master pour revenir dans le
+            présent<br>
+            <code>Git checkout �ID� nom du fichier</code>: Modifie le fichier dans l'état qu'il
+            était au moment du commit associé au ID, git checkout master pour
+            revenir avant la modification du fichier. Ces commandes sont plus utiles
+            pour la modification d'un seul fichier.<br><br>
+            <h3>Git revert</h3>
+            <code>Git revert �ID�</code>: Défait un commit spécifique qui a été fait, peut
+            "revert" un commit revert, l'avantage est qu'on ne perd rien dans
+            l'historique, on peut toujour "revert" le revert.<br><br>
+            <h3>Git reset</h3>
+            <code>Git reset HEAD nom du fichier</code>: Vide le staging<br>
+            <code>Git reset --hard</code>: Revient au dernier commit, detruit toutes les
+            modifications entre.<br>
+            <code>Git reset �ID�</code>: Revient au commit sélectionner, mais laisse toutes les
+            modifications faites depuis en staging.<br>
+            <code>Git reset HEAD^ --soft</code>: Chaque chapeau est pour revenir en arrière de
+            commit de un cran, le soft met toutes les modifications depuis en
+            staging,--mixed ne met pas les modifications en staging, mais ne les
+            détruit pas.<br><br>
+            <code>-git commit --amend</code>: Rajoute des hotfixes(améliorations) sur quelque
+            chose qu'on vient juste de commit, doit stager les nouvelles
+            modifications et après, écrire la commande.
+          </section>
+        </div>
+      </div>
     <div id="sixthFeatureContainer" class="tab-pane fade" role="tabpanel" aria-labelledby="sixth-feature-tab">
       <div class="container">
         <section class="container">
@@ -143,6 +178,7 @@
     </div>
   </div>
 
+  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
