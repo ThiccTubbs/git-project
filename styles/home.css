@@ -34,7 +34,7 @@ code {
 	padding: 1.5em .5em;
 }
 
-.navbar a {	
+.navbar a {
 	color:  var(--link);
 	font-weight: 600;
 	text-shadow: 0 2px 4px rgba(255,255, 255,.7);
@@ -56,8 +56,8 @@ code {
 }
 
 .logo {
-	width:40px; 
-	margin-right:20px; 
+	width:40px;
+	margin-right:20px;
 }
 
 #logoGit {
@@ -129,7 +129,7 @@ code {
 
 #footer {
 	text-align: left;
-    position: fixed; 
+    position: fixed;
     bottom:0%;
 	padding: 10px 20px;
 	left: 0;
@@ -200,4 +200,13 @@ h3 {
 .col-sm {
 	text-align: justify;
 	padding: 15px;
+}
+
+/* Styles Branch */
+.Bpadding-top{
+	padding-top:50px;
+}
+
+.Spadding-top{
+	padding-top: 20px;
 }
