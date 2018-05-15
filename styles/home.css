@@ -14,7 +14,7 @@ body {
 
 code {
     font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
-    color: #e75225;
+    color: var(--accent);
     background-color: #262633;
     border: 1px solid #393945;
     padding: 0.1em 0.5em;
@@ -23,6 +23,7 @@ code {
     border-radius: 3px;
     vertical-align: bottom;
 }
+
 
 /*---Style Navigation Bar--*/
 .bg-light {
@@ -150,34 +151,43 @@ code {
 
 /*---Style Interfaces Graphiques--*/
 
+.container {
+	width: 80%;
+	padding: 0;
+	margin: 0 auto;
+}
+
 .container:last-child {
 	margin-bottom: 200px;
+	border-bottom: none;
 }
 
 .container section {
     padding: 5em 0;
-	border-bottom: 3px solid var(--border);;
+	border-bottom: 3px solid var(--border);
+}
+
+h2 {
+	font-size: 22px;
+	color: var(--title);
+	margin-bottom: 50px;
+	font-weight: 700;
+	line-height: 27px;
 }
 
 h3 {
-	font-size: 22px;
-	color: var(--title);;
-	margin-bottom: 50px;
-	font-weight: 700;
-	line-height: 27.2px;
+	font-size: 18px;
+	color: var(--title);
+	font-weight: 600;
 }
 
 .center {
 	text-align: center;
 }
 
-.center img{
-	height: auto;
-	margin: 0 50px;
-}
-
 .interface img {
-	width: 1000px;
+	width: 800px;
+	margin: 0 auto;
 	display: block;
 	height: auto;
 }
