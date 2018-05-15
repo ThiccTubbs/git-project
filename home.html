@@ -25,7 +25,7 @@
             <a class="nav-link" href="#thirdFeatureContainer" data-toggle="tab" role="tab" aria-controls="third-feature">Commandes de base</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#fourthFeatureContainer" data-toggle="tab" role="tab" aria-controls="fourth-feature">Branches</a>
+            <a class="nav-link" href="#fourthFeatureContainer" data-toggle="tab" role="tab" aria-controls="fourth-feature">Fusionner des branches</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#fifthFeatureContainer" data-toggle="tab" role="tab" aria-controls="fifth-feature">Réparation</a>
@@ -114,35 +114,36 @@
     <div id="fourthFeatureContainer" class="tab-pane fade" role="tabpanel" aria-labelledby="fourth-feature-tab">
         <div class="container">
             <section class="container">
-                <h2 class="center">Les Branches</h2>
-                <h3>Pourquoi crée une branche ?</h3>
-                <p>Qui n'a pas déjà tenté d'ajouter du contenu sur un projet pour ensuite le retirer à grand coup de <code>CTRL+Z</code> parce que cela ne fonctionnait pas et empêchait votre programme de fonctionner ? Avec Git, il est possible de crée une branche que vous pouvez voir comme étant une copie de votre projet pour y faire tout les changements que vous souhaitez sans affecter votre programme principal. Vous pouvez donc vous retrouver avec une branche qui contient tous les <i>features</i> et qui fonctionne en tout temps, ainsi qu'une branche où vous tester l'ajout de ses <i>features</i>. De cette façon, vous vous assurez de conserver un projet propre et sans code inutile. </p>
+                <h2 class="center">Les branches</h2>
+                <h3>Pourquoi créer une branche?</h3>
+                <p>Qui n'a pas déjà tenté d'ajouter du contenu sur un projet pour ensuite le retirer à grand coup de <code>CTRL+Z</code> parce que cela ne fonctionnait pas et empêchait votre programme de fonctionner? Avec Git, il est possible de créer une branche que vous pouvez voir comme étant une copie de votre projet pour y faire tous les changements que vous souhaitez sans affecter votre programme principal. Vous pouvez donc vous retrouver avec une branche qui contient toutes les <i>features</i> et qui fonctionne en tout temps, ainsi qu'une branche où vous tester l'ajout de vos <i>features</i>. De cette façon, vous vous assurez de conserver un projet propre et sans code inutile. </p>
 
-                <h3 class="Spadding-top">Crée une branche</h3>
-                <p>Tout d'abord, vous aurez besoin de la commande <code>git branch</code>. Cette commande vous permet de lister/crée et de supprimer des branches. Pour crée la branche, il suffit donc de taper <code>git branch <i>le_nom_de_la_branche</i></code>.</p>
+                <h3>Créer une branche</h3>
+                <p>Tout d'abord, vous aurez besoin de la commande <code>git branch</code>. Cette commande vous permet de lister/créer et de supprimer des branches. Pour créer la branche, il suffit donc de taper <code>git branch nom_de_la_branche</code>.</p>
 
-                <h3 class="Spadding-top">Accédez à la branche</h3>
+                <h3>Accéder à la branche</h3>
                 <p>Comme dit plus haut, une branche est complètement indépendante du projet principal, il faut donc spécifier que l'on souhaite travailler dessus.</p>
                 <img src="images/branch.png" alt="Montre les branches actives"/>
-                <p>L'on voit ici que nous travaillons sur la branche <i>master</i>.Pour ce rendre sur la branche nommée <i>siteBleu</i>, il faut taper la commande <code>git checkout siteBleu</code>.
-                <u>Important:</u> Si vous travaillez avec GitHub, vous devrez <i>push</i> votre branche sur GitHub.Pour ce faire taper la commande: <code>git push --set-upstream origin <i>le_nom_de_votre_branche</i></code>
+                <p>On voit ici que nous travaillons sur la branche <i>master</i>. Pour ce rendre sur la branche nommée <i>siteBleu</i>, il faut taper la commande <code>git checkout siteBleu</code>.
+                <u>Important:</u> Si vous travaillez avec GitHub, vous devrez <i>push</i> votre branche sur GitHub. Pour se faire, taper la commande: <code>git push --set-upstream origin siteBleu</code>
                 </p>
-
-                <h2 class="center Bpadding-top">Les Merges</h2>
+              </section>
+              <section class="container">
+                <h2 class="center">Merging</h2>
                 <h3>Un merge, c'est quoi?</h3>
                 <p>
-                Un <i>Merge</i> sert à mettre à jour une branche, à partir d'une autre branche. Disons que vous avez la branche <i>master</i> et une branche nommée <i>Expérimentale</i> sur la laquelle vous tester l'ajout de <i>features</i>. La branche <i>Expérimentale</i> est stable et fonctionnelle, vous souhaitez donc inclure les <i>features</i> sur votre branche <i>master</i>.
+                Un <i>merge</i> sert à mettre à jour une branche à partir d'une autre branche. Disons que vous avez la branche <i>master</i> et la branche nommée <i>siteBleu</i> sur laquelle vous testez l'ajout d'une <i>feature</i>. La branche <i>siteBleu</i> est stable et fonctionnelle, vous souhaitez donc inclure ses nouveautés sur votre branche <i>master</i>.
                 </p>
 
-                <h3 class="Spadding-top">Comment faire le merge ?</h3>
-                <p>Très simple, il faut se rendre sur la branche qui vas recevoir les modifications, et tapez la commande <code>git merge <i>le_nom_de_lautre_branche</i></code>. Ainsi, votre branche <i>master</i> contiendra les modifications de l'autre branche. </p>
+                <h3>Comment faire le merge ?</h3>
+                <p>Très simple, il faut se rendre sur la branche qui va recevoir les modifications et taper la commande <code>git merge siteBleu</code>. Ainsi, votre branche <i>master</i> contiendra désormais les modifications de <i>siteBleu</i>>. </p>
 
-                <h3 class="Spadding-top">Merge conflict</h3>
-                <p>Un <i>merge conflict</i> survient lorsque l'on essaye de <i>merge</i> une branche avec une autre et que tous les deux ont modifié les mêmes lignes. Git ne sait donc pas qui a raison et vous laisse donc décidez de la bonne version à conserver. Pour régler des petits merge conflict, il faut se rendre dans le fichier indiqué par Git et choisir la version du code qui nous semble être la meilleure. Voici à quoi cela peut ressembler: :</p>
-                <img src="images/conflict.png" alt="Example de merge conflict"/>
+                <h3>Merge conflict</h3>
+                <p>Un <i>merge conflict</i> survient lorsqu'on essaye de <i>merge</i> une branche avec une autre et que toutes les deux ont modifié les mêmes lignes du code. Git ne sait donc pas laquelle prendre et vous laisse donc décider de la bonne version à conserver. Pour régler des petits <i>merge conflicts</i>, il faut se rendre dans le fichier indiqué par Git et choisir la version du code qui nous semble être la meilleure. Voici à quoi cela peut ressembler: </p>
+                <img src="images/conflict.png" alt="Exemple de merge conflict"/>
 
-                <h3 class="Bpadding-top">Tenir sa branche à jour</h3>
-                <p>Si vous travaillez en équipe et qu'il existe plusieurs branches sur votre <i>repository</i>, il ne faut pas oublier de mettre sa branche à jour lorsque l'on le peut afin de travailler sur la dernière version disponible. Pour ce faire, quoi de plus simple que de réutiliser la commande <code>git merge master</code>.</p>
+                <h3>Tenir sa branche à jour</h3>
+                <p>Si vous travaillez en équipe et qu'il existe plusieurs branches sur votre <i>repository</i>, il ne faut pas oublier de mettre sa branche à jour lorsqu'on le peut afin de travailler sur la dernière version disponible. Pour se faire, rien de plus simple que de réutiliser la commande <code>git merge master</code>.</p>
 
             </section>
         </div>
