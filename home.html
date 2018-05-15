@@ -201,22 +201,22 @@
             perd donc la trace de son existence.<br><br>
             <code>Git log --oneline</code>: Permet de consulter l'historique des commit et les codes.<br><br>
             <h3>Git checkout</h3>
-            <code>Git checkout �ID�</code>: Spectateur pour voir comment le commit était dans le
+            <code>Git checkout "ID"</code>: Spectateur pour voir comment le commit était dans le
             temps, impossible de modifier, git checkout master pour revenir dans le
             présent<br>
-            <code>Git checkout �ID� nom du fichier</code>: Modifie le fichier dans l'état qu'il
+            <code>Git checkout "ID" nom du fichier</code>: Modifie le fichier dans l'état qu'il
             était au moment du commit associé au ID, git checkout master pour
             revenir avant la modification du fichier. Ces commandes sont plus utiles
             pour la modification d'un seul fichier.<br><br>
             <h3>Git revert</h3>
-            <code>Git revert �ID�</code>: Défait un commit spécifique qui a été fait, peut
+            <code>Git revert "ID"</code>: Défait un commit spécifique qui a été fait, peut
             "revert" un commit revert, l'avantage est qu'on ne perd rien dans
             l'historique, on peut toujour "revert" le revert.<br><br>
             <h3>Git reset</h3>
             <code>Git reset HEAD nom du fichier</code>: Vide le staging<br>
             <code>Git reset --hard</code>: Revient au dernier commit, detruit toutes les
             modifications entre.<br>
-            <code>Git reset �ID�</code>: Revient au commit sélectionner, mais laisse toutes les
+            <code>Git reset "ID"</code>: Revient au commit sélectionner, mais laisse toutes les
             modifications faites depuis en staging.<br>
             <code>Git reset HEAD^ --soft</code>: Chaque chapeau est pour revenir en arrière de
             commit de un cran, le soft met toutes les modifications depuis en
