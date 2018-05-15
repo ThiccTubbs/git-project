@@ -198,8 +198,9 @@ h3 {
 }
 
 .interface img {
-	margin: 50px -88px;
-	
+	width: 1000px;
+	height: auto;
+	margin: 50px 70px;
 }
 
 /*---Page d'exercice---*/
